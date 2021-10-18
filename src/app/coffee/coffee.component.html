@@ -1,0 +1,66 @@
+<h1>Coffee Page</h1>
+<h3>Use the calculator below to estimate how long to reheat your coffee!</h3>
+
+<div class="flex">
+    <div class="coffee-calcs">
+        <tr>
+            <td>Starting Temp in °F:</td>
+            <td><input type="text" value="70" (keyup)='getTotalTime()' [(ngModel)]='start_temp' ></td>
+        </tr>
+        <tr>
+            <td>Ending Temp in °F:</td>
+            <td><input type="text" defaultValue="120" (keyup)='getTotalTime()' [(ngModel)]='end_temp'></td>
+        </tr>
+        <tr>
+            <td>Microwave Wattage:</td>
+            <td><input type="text" defaultValue="1200" (keyup)='getTotalTime()' [(ngModel)]="micro_watt"></td>
+        </tr>
+        <tr>
+            <td>Microwave Efficiency in %:</td>
+            <td><input type="text" defaultValue="55" (keyup)='getTotalTime()' [(ngModel)]="eff"></td>
+        </tr>
+        <tr>
+            <td>Oz of Liquid to Heat:</td>
+            <td><input type="text" defaultValue="8" (keyup)='getTotalTime()' [(ngModel)]="fl_oz"></td>
+        </tr>
+        <tr>
+            <td>Time Needed in Microwave:</td>
+            <td class='center'>{{time_micro}} seconds</td>
+        </tr>
+    </div>
+    
+    <div  class="eff-calcs">
+        <div (click)='showHide()' class='hover'>
+            <h2>Estimate Microwave Efficiency</h2>
+        </div>
+        
+        <div class='test' [ngStyle]= " { 'display' : showEffSection ? 'inline' : 'none'} ">
+            <p>To estimate efficiency of your microwave: Input wattage of microwave below. Then take 8 fl oz of water in a container (coffee mug), measure the temperature of the water and input below. Next heat container with water in microwave for 60 seconds (place container in the center of microwave for best results). After heating measure ending tempearture and input below. Last dlick "Find Eff." button to get estimated efficiency.</p>
+            <tr>
+                <td>Wattage of Microwave:</td>
+                <td><input type="text" [(ngModel)]='eff_micro_watt'></td>
+            </tr>
+            <tr>
+                <td>Starting Temp in °F:</td>
+                <td><input type="text" [(ngModel)]='eff_start_temp'></td>
+            </tr>
+            <tr>
+                <td>Ending Temp in °F:</td>
+                <td><input type="text" [(ngModel)]='eff_end_temp'></td>
+            </tr>
+            <tr>
+                <td>Estimated Efficiency:</td>
+                <td class='center'> {{eff_est}} %</td>
+            </tr>
+            <button class='effbutton' (click)="getMicroEff()">Find Eff</button>
+
+        </div>
+        
+
+        <!-- <h3 class='test' [ngStyle]= " { 'display' : showEffSection ? 'inline' : 'none'} "
+        >Test to show or hide</h3> -->
+
+        
+    </div>
+</div>
+

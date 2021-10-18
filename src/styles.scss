@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+// font-family: 'Red Hat Display', sans-serif;
+
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin:0;
+}
+
+header{
+    display: block;
+}
+
+.container{
+
+    ul{
+        width:100%;
+        list-style-type: none;
+        background-color: lightgray;
+        overflow: hidden;
+        padding:.5em 0;
+        margin: 0;
+
+        li{            
+            a{
+                padding: 5px 10px;
+                border: transparent solid 1px;
+            }
+            :hover{
+                // background-color: rgb(161, 161, 161);
+                background-color: lightsteelblue;
+                border-radius: 1em;
+                border: black solid 1px;
+            }
+        }
+    }
+    .title{
+        float:left;
+        margin-left: 5px;
+    }
+    .right{
+        float: right;
+        margin-right: 5px;
+    }
+}
+.overview{
+    margin: 2em 1em;
+}
+
+button {
+    border-radius: 1em;
+    display: block;
+    margin: 1em auto;
+    padding: .3em 2em;
+}
+
+@media (max-width:600px) {  
+    
+    .container{
+        ul{
+            display: flex;
+            flex-direction: column;
+            // align-items: stretch;
+
+            li {
+                // align-items: stretch;
+                // display: flex;
+                a{
+                    border-radius: 1em;
+                    border: black solid 1px;
+                    margin-bottom: .2em;
+                    padding: 5px 20px;
+                    // width: full;
+                    text-align: center;
+                    // align-items: stretch;
+                    background-color: lightsteelblue;
+                }
+            }
+
+            .right, .left{
+                float:left;
+                margin-left: 5px;
+            }
+        }
+        background-color: inherit;
+    }
+
+    button {
+        background-color: lightsteelblue;
+    }
+
+        
+}

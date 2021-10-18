@@ -1,0 +1,25 @@
+
+
+input, button{
+    font-family: inherit;
+}
+
+h1, h2, h3{
+    margin: 10px;
+}
+
+button {
+    border-radius: 1em;
+    display: block;
+    margin: 1em auto;
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+
+}
