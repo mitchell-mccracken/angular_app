@@ -11,6 +11,6 @@ export class AppComponent {
   title = 'mitch-angular';
 
   ngOnInit(){
-    this.router.navigate(['seinfeld'])
+    this.router.navigate(['home'])
   }
 }
