@@ -10,6 +10,7 @@ import { SeinfeldComponent } from './seinfeld/seinfeld.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { TravelComponent } from './travel/travel.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeComponent } from './home/home.component';
     CoffeeComponent,
     SeinfeldComponent,
     HomeComponent,
+    TravelComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<h1>Travel Time Page </h1> 
+
+<h3>Use the calculator below to estimate how much time you will save by increasing your vehicle speed!</h3>
+
+<div class="flex">
+    <div class="time-calcs">
+        <tr>
+            <td>Normal Speed in MPH:</td>
+            <td><input type="text" value="70" (keyup)='getTimeSavings()' [(ngModel)]='normal_speed' ></td>
+        </tr>
+        <tr>
+            <td>New Speed in MPH:</td>
+            <td><input type="text" defaultValue="75" (keyup)='getTimeSavings()' [(ngModel)]='new_speed'></td>
+        </tr>
+        <tr>
+            <td>Estimated distance in miles:</td>
+            <td><input type="text" defaultValue="1200" (keyup)='getTimeSavings()' [(ngModel)]="distance"></td>
+        </tr>
+        <tr>
+            <td>Normal Speed Trip Time:</td>
+            <td class='center'>{{normal_time}} Minutes</td>
+        </tr>
+        <tr>
+            <td>New Speed Trip Time:</td>
+            <td class='center'>{{new_time}} Minutes</td>
+        </tr>
+        <tr>
+            <td>Total Time Savings:</td>
+            <td class='center'>{{time_savings}} Minutes</td>
+        </tr>
+    </div>
+</div>

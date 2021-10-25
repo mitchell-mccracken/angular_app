@@ -1,0 +1,88 @@
+td{
+    padding:.2em .5em;
+}
+
+input, button{
+    font-family: inherit;
+}
+
+h1, h3, img{
+    margin: 10px;
+}
+img{
+    height:45px;
+    border-radius: 1em;
+    border: black solid 1px;
+}
+h2 {
+    margin: .5em auto;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.time-calcs {
+    border: black solid 1px;
+    border-radius: 1em;
+    margin: auto;
+    position: static;
+    max-width: 450px;
+    margin: .2em;
+    margin-left: 10px;
+    padding: 1em;
+
+
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(80, 30, 30);
+    border-radius: 1em;
+    border:lightgray solid 1px;
+    color: white;
+}
+
+.eff-calcs{
+    border: black solid 1px;
+    border-radius: 1em;
+    position: static;
+    margin: auto;
+    margin: .2em;
+    margin-left: 10px;
+    padding: 1em;
+    max-width: 450px;
+    text-align: justify;
+}
+
+.test{
+    display: none;
+}
+.hover {
+    border-radius: 1em;
+    border: black solid 1px;
+    background-color: lightgray;
+
+    h2{
+        // padding-left: .5em;
+        // border: black solid 1px;
+        // border-radius: inherit;
+        text-align: center;
+        
+    }
+}
+
+.hover:hover{
+    cursor:pointer;
+    background-color: rgb(234, 233, 219);
+    background-color: lightsteelblue;
+    border-radius: 1em;
+}
+
+@media (max-width:600px) {
+    .hover {
+        background-color: lightsteelblue;
+    }
+}
