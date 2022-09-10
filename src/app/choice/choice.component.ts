@@ -10,8 +10,8 @@ export class ChoiceComponent implements OnInit {
   constructor() { }
 
   choices: Array<any> = [
-    { value: 'choice 1'},
-    { value: 'choice 2'},
+    { value: '' },
+    { value: '' },
   ];
 
   showResult:boolean = false;

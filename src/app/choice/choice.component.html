@@ -2,7 +2,7 @@
 <button (click)="addChoice()">ADD CHOICE</button>
 <button (click)="generateDecision()" >Choose</button>
 <div *ngFor="let x of choices; let i =  index" id="{{i}}" >
-    <input class="center" type="text" [(ngModel)]="x.value" >
+    <input (keydown.enter)="generateDecision()" class="center" type="text" [(ngModel)]="x.value" placeholder="insert choice">
 </div>
 <br>
 <label class="center bold" for="choice">TOP CHOICES</label><br>
