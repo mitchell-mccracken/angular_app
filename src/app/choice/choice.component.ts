@@ -61,15 +61,11 @@ export class ChoiceComponent implements OnInit {
       ? 3
       : sortedKeys.length;
     this.sortedKeysSmall = sortedKeys.slice(0, idx);
-    // console.log(sortedKeys);
 
     const sorted = sortedKeys.map( k => { 
       const val:number = choiceObj[k];
-      // console.log(k)
-      // console.log(val)
       return { [k]: val };
     } );
-    // console.log(sorted);
 
     this.sorted = sorted;
   }
