@@ -1,0 +1,16 @@
+
+<button (click)="addChoice()">ADD CHOICE</button>
+<button (click)="generateDecision()" >Choose</button>
+<div *ngFor="let x of choices; let i =  index" id="{{i}}" >
+    <input type="text" [(ngModel)]="x.value" >
+</div>
+<br>
+<label for="choice">TOP CHOICES</label><br>
+<div *ngFor="let key of sortedKeysSmall">
+    <label>Choice: {{key}}   |</label>
+    <label>   Count: {{choiceObj[key]}}</label>
+
+</div>
+<!-- <label for="key" *ngFor="let k of sortedKeys">{{k}}</label> -->
+
+

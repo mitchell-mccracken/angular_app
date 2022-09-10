@@ -11,6 +11,7 @@ import { SeinfeldComponent } from './seinfeld/seinfeld.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { TravelComponent } from './travel/travel.component';
+import { ChoiceComponent } from './choice/choice.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TravelComponent } from './travel/travel.component';
     SeinfeldComponent,
     HomeComponent,
     TravelComponent,
+    ChoiceComponent,
   ],
   imports: [
     BrowserModule,
